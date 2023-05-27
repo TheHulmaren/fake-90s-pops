@@ -81,6 +81,7 @@ export default {
     },
   },
   async mounted() {
+    console.log(process.env.VUE_APP_OPENAI_API_KEY);
     try {
       this.matchedIds = await this.searchPops();
 
